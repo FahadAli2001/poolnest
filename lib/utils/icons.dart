@@ -1,0 +1,1 @@
+String tagIcon = "assets/icons/Tags.png";
