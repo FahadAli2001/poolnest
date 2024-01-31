@@ -34,67 +34,69 @@ class EditCustomer extends StatelessWidget {
       ),
       body: Padding(
         padding:const   EdgeInsets.symmetric(horizontal: horizontalPadding,vertical: verticalPadding),
-        child: Column(
-          children: [
-           Container(
-            width: Get.width,
-            height: Get.height*0.08,
-            decoration: BoxDecoration(
-              color: Colors.grey.shade300,
-              borderRadius: BorderRadius.circular(20)
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                GestureDetector(
-                  onTap: () {
-                    isProfile.value = true;
-                  },
-                  child: Obx(() => Container(
-                    width:isProfile.value == true ? Get.width*0.45:Get.width*0.4,
-                    decoration: BoxDecoration(
-                      color: isProfile.value == true ?yellowColor:Colors.grey.shade300,
-                      borderRadius: BorderRadius.circular(20)
-                    ),
-                    child:const Center(
-                      child: Text('Profile',style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16
-                      ),),
-                    ),
-                  ),)
-                ),
-              const  SizedBox(
-                  width: 10,
-                ),
-                GestureDetector(
-                  onTap: () {
-                      isProfile.value = false;
-                  },
-                  child: Obx(() => Container(
-                    width:isProfile.value == false ? Get.width*0.45:Get.width*0.4,
-                    decoration: BoxDecoration(
-                      color: isProfile.value == false?yellowColor:Colors.grey.shade300,
-                      borderRadius: BorderRadius.circular(20)
-                    ),
-                    child: const Center(
-                        child: Text('Service Location',style: TextStyle(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+             Container(
+              width: Get.width,
+              height: Get.height*0.08,
+              decoration: BoxDecoration(
+                color: Colors.grey.shade300,
+                borderRadius: BorderRadius.circular(20)
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      isProfile.value = true;
+                    },
+                    child: Obx(() => Container(
+                      width:isProfile.value == true ? Get.width*0.45:Get.width*0.4,
+                      decoration: BoxDecoration(
+                        color: isProfile.value == true ?yellowColor:Colors.grey.shade300,
+                        borderRadius: BorderRadius.circular(20)
+                      ),
+                      child:const Center(
+                        child: Text('Profile',style: TextStyle(
                           color: Colors.white,
                           fontSize: 16
                         ),),
                       ),
-                  ),)
-                ),
-              ],
-            ),
-           ),
-           //
-            const  SizedBox(
-                  height: 20,
-                ),
-           //
-           CustomProfileWidget()
-          ],
+                    ),)
+                  ),
+                const  SizedBox(
+                    width: 10,
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                        isProfile.value = false;
+                    },
+                    child: Obx(() => Container(
+                      width:isProfile.value == false ? Get.width*0.45:Get.width*0.4,
+                      decoration: BoxDecoration(
+                        color: isProfile.value == false?yellowColor:Colors.grey.shade300,
+                        borderRadius: BorderRadius.circular(20)
+                      ),
+                      child: const Center(
+                          child: Text('Service Location',style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16
+                          ),),
+                        ),
+                    ),)
+                  ),
+                ],
+              ),
+             ),
+             //
+              const  SizedBox(
+                    height: 20,
+                  ),
+             //
+             CustomProfileWidget()
+            ],
+          ),
         ),
       ),
     );
