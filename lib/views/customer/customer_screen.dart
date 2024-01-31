@@ -170,7 +170,7 @@ class CustomerScreen extends StatelessWidget {
                             children: [
                               ListTile(
                                 onTap: () {
-                                  Get.to(()=>const EditCustomer());
+                                  Get.to(()=>  EditCustomer());
                                 },
                                 title: const Text(
                                   "Alisher Alwani",
