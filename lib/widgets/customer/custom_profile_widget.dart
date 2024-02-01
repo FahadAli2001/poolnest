@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_advanced_switch/flutter_advanced_switch.dart';
 import 'package:get/get.dart';
 import 'package:poolnest/utils/colors.dart';
+import 'package:poolnest/widgets/custom_textFlied.dart';
 
 // ignore: must_be_immutable
 class CustomProfileWidget extends StatelessWidget {
@@ -146,28 +147,18 @@ class CustomProfileWidget extends StatelessWidget {
         ),
         SizedBox(
           height: Get.height * 0.08,
-          child: const TextField(
-            decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                    borderSide: BorderSide(color: Colors.grey)),
-                hintText: "Full Name",
-                hintStyle: TextStyle(color: Colors.grey)),
-          ),
+          child:const CustomTextFlieldWidget(hintText: 'First Name',borderSide: BorderSide(
+                      color: Colors.grey
+                     ),)
         ),
         const SizedBox(
           height: 20,
         ),
         SizedBox(
           height: Get.height * 0.08,
-          child: const TextField(
-            decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                    borderSide: BorderSide(color: Colors.grey)),
-                hintText: "Last Name",
-                hintStyle: TextStyle(color: Colors.grey)),
-          ),
+          child:const CustomTextFlieldWidget(hintText: 'Last Name',borderSide: BorderSide(
+                      color: Colors.grey
+                     ),)
         ),
         const SizedBox(
           height: 20,
@@ -248,140 +239,90 @@ class CustomProfileWidget extends StatelessWidget {
         ),
         SizedBox(
           height: Get.height * 0.08,
-          child: const TextField(
-            decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                    borderSide: BorderSide(color: Colors.grey)),
-                hintText: "City",
-                hintStyle: TextStyle(color: Colors.grey)),
-          ),
+          child: const CustomTextFlieldWidget(hintText: "City",borderSide: BorderSide(
+                      color: Colors.grey
+                     ))
         ),
         const SizedBox(
           height: 20,
         ),
         SizedBox(
           height: Get.height * 0.08,
-          child: const TextField(
-            decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                    borderSide: BorderSide(color: Colors.grey)),
-                hintText: "State",
-                hintStyle: TextStyle(color: Colors.grey)),
-          ),
+          child:const  CustomTextFlieldWidget(hintText: "State",borderSide: BorderSide(
+                      color: Colors.grey
+                     ))
         ),
         const SizedBox(
           height: 20,
         ),
         SizedBox(
           height: Get.height * 0.08,
-          child: const TextField(
-            decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                    borderSide: BorderSide(color: Colors.grey)),
-                hintText: "Zip Code",
-                hintStyle: TextStyle(color: Colors.grey)),
-          ),
+          child:const  CustomTextFlieldWidget(hintText: 'Zip Code',borderSide: BorderSide(
+                      color: Colors.grey
+                     ))
         ),
         const SizedBox(
           height: 20,
         ),
         SizedBox(
           height: Get.height * 0.08,
-          child: const TextField(
-            decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                    borderSide: BorderSide(color: Colors.grey)),
-                hintText: "Company Name",
-                hintStyle: TextStyle(color: Colors.grey)),
-          ),
+          child:const  CustomTextFlieldWidget(hintText: 'Company Name',borderSide: BorderSide(
+                      color: Colors.grey
+                     ))
         ),
         const SizedBox(
           height: 20,
         ),
         SizedBox(
           height: Get.height * 0.08,
-          child: const TextField(
-            decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                    borderSide: BorderSide(color: Colors.grey)),
-                hintText: "Billing Address",
-                hintStyle: TextStyle(color: Colors.grey)),
-          ),
+          child:const  CustomTextFlieldWidget(hintText: 'Company Code',borderSide: BorderSide(
+                      color: Colors.grey
+                     ))
         ),
         const SizedBox(
           height: 20,
         ),
         SizedBox(
           height: Get.height * 0.08,
-          child: const TextField(
-            decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                    borderSide: BorderSide(color: Colors.grey)),
-                hintText: "Billing Notes",
-                hintStyle: TextStyle(color: Colors.grey)),
-          ),
+          child:const  CustomTextFlieldWidget(hintText: 'Billing Address',borderSide: BorderSide(
+                      color: Colors.grey
+                     ))
         ),
         const SizedBox(
           height: 20,
         ),
         SizedBox(
           height: Get.height * 0.08,
-          child: const TextField(
-            decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                    borderSide: BorderSide(color: Colors.grey)),
-                hintText: "Mobile (Primary)",
-                hintStyle: TextStyle(color: Colors.grey)),
-          ),
+          child:const CustomTextFlieldWidget(hintText: 'Billing Notes',borderSide: BorderSide(
+                      color: Colors.grey
+                     ))
         ),
         const SizedBox(
           height: 20,
         ),
         SizedBox(
           height: Get.height * 0.08,
-          child: const TextField(
-            decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                    borderSide: BorderSide(color: Colors.grey)),
-                hintText: "Home Phone (Primary)",
-                hintStyle: TextStyle(color: Colors.grey)),
-          ),
+          child:const  CustomTextFlieldWidget(hintText: 'Home Phone (Primary)',borderSide: BorderSide(
+                      color: Colors.grey
+                     ))
         ),
         const SizedBox(
           height: 20,
         ),
         SizedBox(
           height: Get.height * 0.08,
-          child: const TextField(
-            decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                    borderSide: BorderSide(color: Colors.grey)),
-                hintText: "Email (Primary)",
-                hintStyle: TextStyle(color: Colors.grey)),
-          ),
+          child:const  CustomTextFlieldWidget(hintText: 'Email (Primary)',borderSide: BorderSide(
+                      color: Colors.grey
+                     ))
         ),
         const SizedBox(
           height: 20,
         ),
         SizedBox(
           height: Get.height * 0.08,
-          child: const TextField(
-            decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                    borderSide: BorderSide(color: Colors.grey)),
-                hintText: "Mobile (Secandary)",
-                hintStyle: TextStyle(color: Colors.grey)),
-          ),
+          child:const CustomTextFlieldWidget(hintText: 'Mobile (Secandary)',borderSide: BorderSide(
+                      color: Colors.grey
+                     ))
         ),
         const SizedBox(
           height: 20,

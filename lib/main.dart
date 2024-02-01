@@ -20,15 +20,17 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'poolNest',
       theme: ThemeData(
-         
-        useMaterial3: true,
-      ),
-     home:const SplashScreen(),
+          inputDecorationTheme: const InputDecorationTheme(
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(
+                  color: Colors.grey),  
+            ),
+          ),
+          useMaterial3: true),
+      home: const SplashScreen(),
       initialBinding: BindingsBuilder(() {
         Get.put(SplashScreenController());
       }),
     );
   }
 }
-
- 
