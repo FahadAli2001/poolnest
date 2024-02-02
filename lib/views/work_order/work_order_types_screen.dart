@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:poolnest/utils/images.dart';
 import 'package:poolnest/utils/padding.dart';
-import 'package:poolnest/views/work_order/work_order_types_screen.dart';
-import 'package:poolnest/widgets/custom_button_widget.dart';
 
-class AddItemsScreen extends StatelessWidget {
-  const AddItemsScreen({super.key});
+class WorkOrderTypesScreen extends StatelessWidget {
+  const WorkOrderTypesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +24,7 @@ class AddItemsScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Edit Customer",
+              "Work Orders Types",
               style: TextStyle(
                   color: Colors.grey.shade900, fontWeight: FontWeight.bold),
             ),
@@ -40,11 +38,7 @@ class AddItemsScreen extends StatelessWidget {
           ],
         ),
         actions: [
-          GestureDetector(
-            onTap: () {
-              Get.to(()=>const WorkOrderTypesScreen());
-            },
-            child: Image.asset(nextBtn)),
+          Image.asset(nextBtn),
           SizedBox(
             width: Get.width * 0.05,
           )
@@ -62,31 +56,37 @@ class AddItemsScreen extends StatelessWidget {
               width: Get.width,
               height: Get.height,
               decoration: BoxDecoration(
-                color: Colors.grey.shade300,
-                borderRadius: BorderRadius.circular(20)
-              ),
+                  color: Colors.grey.shade300,
+                  borderRadius: BorderRadius.circular(20)),
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: horizontalPadding,vertical: verticalPadding),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: horizontalPadding, vertical: verticalPadding),
                 child: Column(
                   children: [
-                  const  SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
-                      CustomButtonWidget(color: Colors.white, 
-                      textColor: Colors.black,
-                    text: 'Add Parts', ontap: (){}),
-                    const  SizedBox(
+                    Image.asset(serviceCallBtn),
+                    const SizedBox(
                       height: 20,
                     ),
-                     CustomButtonWidget(color: Colors.white, 
-                     textColor: Colors.black,
-                    text: 'Add Chemical', ontap: (){}),
-                    const  SizedBox(
+                    Image.asset(strainerBtn),
+                    const SizedBox(
                       height: 20,
                     ),
-                     CustomButtonWidget(color: Colors.white, 
-                     textColor: Colors.black,
-                    text: 'Add Other', ontap: (){})
+                    Image.asset(robotRepairBtn),
+                     const SizedBox(
+                      height: 20,
+                    ),
+                    Image.asset(g2cBtn),
+                     const SizedBox(
+                      height: 20,
+                    ),
+                    Image.asset(filterCleanBtn),
+                     const SizedBox(
+                      height: 20,
+                    ),
+                    Image.asset(poolDrainBtn),
                   ],
                 ),
               ),
