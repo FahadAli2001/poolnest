@@ -4,12 +4,17 @@ class CustomTextFlieldWidget extends StatelessWidget {
   final String hintText;
   final Icon? sufficIcon;
   final BorderSide borderSide;
-
- const CustomTextFlieldWidget({super.key, required this.hintText,required this.borderSide,this.sufficIcon});
+  final int? maxline;
+  final int? minline;
+ const CustomTextFlieldWidget({super.key, required this.hintText,required this.borderSide,this.sufficIcon,
+ this.maxline,
+ this.minline});
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+       maxLines: maxline,
+      minLines: minline,
       decoration: InputDecoration(
         suffixIcon: sufficIcon,
           fillColor: Colors.white,

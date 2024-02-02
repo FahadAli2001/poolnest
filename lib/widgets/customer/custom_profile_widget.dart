@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_advanced_switch/flutter_advanced_switch.dart';
 import 'package:get/get.dart';
 import 'package:poolnest/utils/colors.dart';
+import 'package:poolnest/widgets/custom_button_widget.dart';
 import 'package:poolnest/widgets/custom_textFlied.dart';
 
 // ignore: must_be_immutable
@@ -488,21 +489,12 @@ class CustomProfileWidget extends StatelessWidget {
          const SizedBox(
           height: 20,
         ),
-        Container(
-          width: Get.width,
-          height: Get.height*0.08,
-          decoration: BoxDecoration(
-            color: yellowColor,
-            borderRadius: BorderRadius.circular(10)
-          ),
-          child:const Center(
-            child: Text("SAVE",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 20
-            ),),
-          ),
-        )
+          CustomButtonWidget(
+             textColor: Colors.white,
+            ontap: () {
+              
+            },
+            color: yellowColor, text: 'SAVE')
       ],
     );
   }

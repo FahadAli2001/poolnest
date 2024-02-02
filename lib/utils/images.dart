@@ -4,3 +4,5 @@ String splashScreen = "assets/images/Splash.png";
 String doneBtn = "assets/images/doneBtn.png";
 String profileTab = "assets/images/profile.png";
 String serviceTab = "assets/images/service.png";
+String poolImage = "assets/images/pool.png";
+String nextBtn = "assets/images/nextBtn.png";
