@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:poolnest/utils/colors.dart';
 import 'package:poolnest/views/customer/customer_screen.dart';
+import 'package:poolnest/views/work_order/work_order_listening_screen.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 
 class CustomerDashboard extends StatefulWidget {
@@ -17,7 +18,7 @@ class _CustomerDashboardState extends State<CustomerDashboard> {
   const  Placeholder(),
   CustomerScreen(),
   const  Placeholder(),
-  const  Placeholder(),
+  const  WorkOrderListeningScreen(),
   const  Placeholder(),
   ];
   @override

@@ -12,3 +12,5 @@ String robotRepairBtn = "assets/images/robot_repair.png";
 String g2cBtn = "assets/images/g2c.png";
 String filterCleanBtn = "assets/images/filter_clean.png";
 String poolDrainBtn ="assets/images/pool_drain.png";
+String radioOnBtn = "assets/images/radio_on.png";
+String radioOffBtn = "assets/images/radio_off.png";

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:poolnest/utils/colors.dart';
 import 'package:poolnest/utils/images.dart';
 import 'package:poolnest/utils/padding.dart';
+import 'package:poolnest/views/work_order/add_work_order_type_screen.dart';
 
 class WorkOrderTypesScreen extends StatelessWidget {
   const WorkOrderTypesScreen({super.key});
@@ -20,15 +22,15 @@ class WorkOrderTypesScreen extends StatelessWidget {
               Icons.arrow_back_ios,
               color: Colors.grey.shade900,
             )),
-        title: Column(
+        title:const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               "Work Orders Types",
               style: TextStyle(
-                  color: Colors.grey.shade900, fontWeight: FontWeight.bold),
+                  color: primaryColor, fontWeight: FontWeight.bold),
             ),
-            const Text(
+              Text(
               "Pool Name",
               style: TextStyle(
                   fontSize: 14,
@@ -38,7 +40,11 @@ class WorkOrderTypesScreen extends StatelessWidget {
           ],
         ),
         actions: [
-          Image.asset(nextBtn),
+          GestureDetector(
+            onTap: () {
+              Get.to(()=>  AddWorkOrderTypeScreen());
+            },
+            child: Image.asset(nextBtn)),
           SizedBox(
             width: Get.width * 0.05,
           )

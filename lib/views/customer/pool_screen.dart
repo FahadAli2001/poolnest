@@ -25,10 +25,10 @@ class PoolScreen extends StatelessWidget {
               Icons.arrow_back_ios,
               color: Colors.grey.shade900,
             )),
-        title: Text(
+        title:const Text(
           "Location Name",
           style: TextStyle(
-              color: Colors.grey.shade900, fontWeight: FontWeight.bold),
+              color: primaryColor, fontWeight: FontWeight.bold),
         ),
         actions: [
           Image.asset(doneBtn),
