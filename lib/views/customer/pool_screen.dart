@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:poolnest/utils/colors.dart';
+ import 'package:poolnest/utils/colors.dart';
 import 'package:poolnest/utils/images.dart';
 import 'package:poolnest/utils/padding.dart';
 import 'package:poolnest/views/customer/add_item_screen.dart';

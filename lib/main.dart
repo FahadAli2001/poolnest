@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/get_instance.dart';
-import 'package:get/get_instance/src/bindings_interface.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
+ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:poolnest/controller/splash_screen_controller.dart';
 import 'package:poolnest/views/splash_screen.dart';
 

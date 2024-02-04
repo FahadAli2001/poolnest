@@ -4,8 +4,7 @@ import 'package:poolnest/utils/colors.dart';
 import 'package:poolnest/utils/icons.dart';
 import 'package:poolnest/utils/images.dart';
 import 'package:poolnest/utils/padding.dart';
-import 'package:poolnest/widgets/custom_textFlied.dart';
-
+ 
 class WorkOrderListeningScreen extends StatelessWidget {
   const WorkOrderListeningScreen({super.key});
 
@@ -90,6 +89,40 @@ class WorkOrderListeningScreen extends StatelessWidget {
                   fontSize: 16,
                   fontWeight: FontWeight.bold),
             ),
+         const   SizedBox(
+              height: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                 const Text(
+              'Technician Name ',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            Container(
+              width: Get.width*0.25,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: yellowColor
+              ),
+              child: Column(
+               
+                children: [
+                    const Text(
+              '12',
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold),
+            ),
+                ],
+              ),
+            )
+              ],
+            )
           ],
         ),
       ),
