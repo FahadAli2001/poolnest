@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:poolnest/utils/colors.dart';
 import 'package:poolnest/views/customer/customer_screen.dart';
+import 'package:poolnest/views/settings/setting_screen.dart';
 import 'package:poolnest/views/work_order/work_order_listening_screen.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 
@@ -19,7 +20,7 @@ class _CustomerDashboardState extends State<CustomerDashboard> {
   CustomerScreen(),
   const  Placeholder(),
   const  WorkOrderListeningScreen(),
-  const  Placeholder(),
+  const  SettingScreen(),
   ];
   @override
   Widget build(BuildContext context) {
