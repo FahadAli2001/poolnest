@@ -20,7 +20,7 @@ class _CustomerDashboardState extends State<CustomerDashboard> {
   CustomerScreen(),
   const  Placeholder(),
   const  WorkOrderListeningScreen(),
-  const  SettingScreen(),
+     SettingScreen(),
   ];
   @override
   Widget build(BuildContext context) {
